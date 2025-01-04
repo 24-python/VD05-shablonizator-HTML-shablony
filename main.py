@@ -4,13 +4,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def film():
-    html = render_template('index.html')
-    return html
+    return render_template('index.html')
+
 
 @app.route('/actor/')
 def actor():
-    html = render_template('actor.html')
-    return html
+
+    return render_template('actor.html')
 
 if __name__ == '__main__':
     app.run()

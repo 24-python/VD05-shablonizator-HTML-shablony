@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+    {% if user %}
+        <p>Привет! Вы вошли в систему под именем {{user}}!</p>
+    {% endif %}
+
+<p>Вы должны выложить {{number}}
+    {% if number == 1 %}
+    фотографию
+    {% elif 2 <= number <= 4 %}
+    фотографии
+    {% else %}
+    фотографий
+    {% endif %}
+</p>
+
+    <H1>{{H1}}</H1> <br>
+{% for i in poem %}
+    <p>{{i}}</p><br>
+    {% endfor %}
+
+</body>
+</html>
